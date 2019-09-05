@@ -10,3 +10,18 @@
 </head>
 
 <body>
+
+    <h1>
+        <?php bloginfo('name'); ?>
+    </h1>
+    <h2>
+        <?php bloginfo('description'); ?>
+    </h2>
+
+    <nav class="main-navigation">
+        <?php wp_nav_menu(
+            ['theme_location' => 'primary']
+        ); ?>
+    </nav>
+
+    <img src="<?php echo get_stylesheet_directory_uri() ?>/images/placeholder.gif" alt="<?php bloginfo('name'); ?>">
