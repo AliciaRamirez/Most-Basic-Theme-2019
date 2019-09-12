@@ -9,7 +9,7 @@
 
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 
     <h1>
         <?php bloginfo('name'); ?>
