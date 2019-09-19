@@ -10,12 +10,16 @@
             <p>by <?php the_author(); ?></p>
             <p><?php the_time('F j, Y, g:i a'); ?></p>
 
+            <?php the_post_thumbnail("large"); ?>
+
             <?php the_content(); ?>
 
             <p>Categories: <?php the_category(", "); ?></p>
             <p><?php the_tags(); ?></p>
 
         </article>
+
+        <?php comments_template(); ?>
 <?php endwhile;
 endif; ?>
 

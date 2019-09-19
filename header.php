@@ -5,14 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php wp_head(); ?>
+    <?php wp_head();
+    ?>
 
 </head>
 
 <body <?php body_class(); ?>>
 
     <h1>
-        <?php bloginfo('name'); ?>
+        <a href="<?php echo home_url() ?>"><?php bloginfo('name'); ?></a>
     </h1>
     <h2>
         <?php bloginfo('description'); ?>
