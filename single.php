@@ -20,6 +20,7 @@
         </article>
 
         <?php comments_template(); ?>
+        <?php comment_form(); ?>
 <?php endwhile;
 endif; ?>
 
